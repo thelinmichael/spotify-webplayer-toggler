@@ -2,12 +2,12 @@
   "manifest_version": 2,
   "name": "Spotify Web Player Toggler",
   "description": "This extension switches tabs between Spotify's Web Player and the most recently open tab.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "permissions": [
     "tabs"
   ],
   "browser_action": {
-    "default_icon": "images/icon19.png"
+    "default_icon": "images/19.png"
   },
   "icons": { "16": "images/16.png", "48": "images/48.png", "128": "images/128.png" },
   "background" : { "scripts" : [ "scripts/background.js" ], "persistent": false },
