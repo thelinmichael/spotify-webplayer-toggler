@@ -62,7 +62,9 @@ var openWebPlayerInNewTab = function() {
 
 var selectCorrectTab = function(webPlayerTabs) {
 	if (webPlayerTabs.length > 0) {
-		return webPlayerTabs[0]; // TODO: Choose the correct one if there are several.
+		return webPlayerTabs[0]; // TODO: Choose the correct one if there are several. 
+		                         // Prioritise web players in the same window, or if 
+		                         // one is playing. 
 	} else {
 		return null;
 	}
