@@ -1,27 +1,13 @@
 {
   "manifest_version": 2,
   "name": "Spotify Web Player Toggler",
-  "description": "This extension switches tabs between Spotify's Web Player and the most recently open tab. If the Web Player isn't currently open in any tab, the extension opens it in a new tab. Click on the extension icon or use the keyboard shortcut (Command+Shift+S on Mac OS, Ctrl+Shift+S on Windows/Linux/Others) to toggle.",
+  "description": "This extension switches tabs between Spotify's Web Player and the most recently open tab.",
   "version": "0.1.0",
   "permissions": [
     "tabs"
   ],
-  "icons": { "16": "images/16.png",
-           "48": "images/48.png",
-          "128": "images/128.png" },
-  "background" : {
-    "scripts" : [
-      "scripts/background.js"
-    ],
-    "persistent": false 
-  },
-  "commands": {
-    "toggle-webplayer": {
-      "suggested_key": {
-        "default": "Ctrl+Shift+S",
-        "mac": "Command+Shift+S"
-      },
-      "description": "Switch to or away from the Spotify Web Player."
-    }
+  "icons": { "16": "images/16.png", "48": "images/48.png", "128": "images/128.png" },
+  "background" : { "scripts" : [ "scripts/background.js" ], "persistent": false },
+  "commands": { "toggle-webplayer": { "suggested_key": { "default": "Ctrl+Shift+S", "mac": "Command+Shift+S" }, "description": "Toggle the Web Player." }
   }
 }
