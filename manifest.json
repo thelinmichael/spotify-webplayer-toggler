@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "Spotify Web Player Helper",
+  "description": "This extension switches tabs between Spotify's Web Player and the most recently open tab. If Spotify isn't currently open in any tab, the extension opens it in a new tab.",
+  "version": "0.1.0",
+  "permissions": [
+    "tabs"
+  ],
+  "background" : {
+    "scripts" : [
+      "scripts/background.js"
+    ],
+    "persistent": false 
+  },
+  "commands": {
+    "toggle-webplayer": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+S",
+        "mac": "Command+Shift+S"
+      },
+      "description": "Switch to or away from the Spotify Web Player."
+    }
+  }
+}
